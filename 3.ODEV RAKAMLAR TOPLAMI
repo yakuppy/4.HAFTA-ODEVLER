@@ -1,0 +1,21 @@
+isim=input("kullanici isminiz giriniz   :")
+b=0#kullanicidan gelen degerleri toplamk icin donguye sokuldu
+a =0
+while True:
+
+    for i in isim:#inut degeri karakterlere ayrildi
+
+        if i.isdigit() == True:#kullanicinin  verdigi bilginin icinden rakamlar alindi
+            a+=1
+            b+=int(i)#kullanicidan gelen deger int a cevrilerek her gelen bilgi uzerine eklendi
+            print("isminizdeki {} inci rakamsal deger  :".format(a),i)
+
+
+    print("kullanici isminizdeki rakamlarin toplmi   :", b)
+    break
+
+
+
+
+
+
