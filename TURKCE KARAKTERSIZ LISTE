@@ -1,0 +1,14 @@
+print("yeni futbolcular listesi listeleniyor:")
+with open("futbolcular.txt", "r+", encoding="utf-8") as file:
+
+    data = file.read()
+    kaynak ="şçöğüıŞÇÖĞÜİ"
+    hedef ="scoguiSCOGUI"
+    çeviri_tablosu = str.maketrans(kaynak, hedef)
+    data=data.translate(çeviri_tablosu)
+
+
+    with open("yeni futbolcular listesi.txt", "a",encoding="utf-8") as f:
+
+        f.write(data)
+        print(data)
