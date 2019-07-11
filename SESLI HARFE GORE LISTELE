@@ -1,0 +1,14 @@
+print("futbolcular sesli harfe gore  listeleniyor:")
+with open("futbolcular.txt", "r+", encoding="utf-8") as file:
+    a = file.readlines()#dosya satir halinde okunuyor
+    sesli_harfler="A","E","I","İ","Ü","U","O","Ö"#sesli harfler belirleniyor
+    for i in a:
+        bilgi = i.split(",")#okunan satir virgulden ayriliyor
+
+        if bilgi[0].startswith(sesli_harfler)==True:#bilginin 0 inci listesi bize futbolcu ismini veriyor
+            with open("sesli ile baslayanlar.txt", "a", encoding="utf-8") as f:
+                f.write(bilgi[0] + "\n")
+                print( bilgi[0])
+                f.close()
+
+
