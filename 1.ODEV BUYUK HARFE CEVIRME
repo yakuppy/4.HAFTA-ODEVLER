@@ -1,0 +1,3 @@
+#kullanicidan alinan ismi buyuk harflere cevirme
+isim=input("kullanizi isiminiz giriniz    :")
+print("Kullanici isminiz    :" ,isim.upper())
